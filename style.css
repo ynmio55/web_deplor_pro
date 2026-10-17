@@ -102,3 +102,64 @@ i[data-lucide],svg.lucide{width:1em;height:1em}
 @media (hover:none),(pointer:coarse){#cursor{display:none}}
 @media (max-width:640px){.dots{right:10px}.caption{bottom:9vh}.scroll-hint{display:none}}
 @media (prefers-reduced-motion:reduce){.relic,.caret,.scroll-hint span{animation:none}html{scroll-behavior:auto}.project-card,.btn,.launch-btn{transition:none}}
+
+
+/* Editorial orchard motion: warm, tactile, deliberately restrained */
+:root{--bg:#11191a;--fg:#f5f0e6;--muted:#b4b7ae;--line:rgba(244,237,220,.16);--card:#f1ecdf;--ink:#20312d;--moss:#556b4d;--citrus:#d39138}
+body{background:var(--bg);color:var(--fg);font-family:'Inter','Noto Sans Thai',sans-serif}
+.serif{font-family:'Playfair Display','Noto Serif Thai',serif;letter-spacing:-.025em}
+.grad{background:linear-gradient(100deg,#f4e1b2,#e3a44c 58%,#c7753d);-webkit-background-clip:text;background-clip:text;color:transparent}
+.glow{background:radial-gradient(65% 55% at 50% 0%,rgba(92,115,83,.22),transparent 75%),radial-gradient(45% 40% at 90% 40%,rgba(198,132,58,.08),transparent 70%)}
+.site-header{background:rgba(17,25,26,.76);border-bottom-color:rgba(244,237,220,.1)}
+.brand-icon{border-radius:50%;background:#d9aa63;color:#17201d;box-shadow:none}
+.search-box input{border-radius:5px;background:rgba(255,255,255,.035)}
+.search-box input:focus{border-color:#d9aa63;background:rgba(255,255,255,.07)}
+.hero-section{padding-top:clamp(90px,14vh,150px);padding-bottom:clamp(110px,18vh,180px)}
+.pill{border-radius:3px;border-color:rgba(244,237,220,.22);background:rgba(255,255,255,.025);letter-spacing:.05em}
+.pill .dot{background:#b8c78d;box-shadow:0 0 0 4px rgba(184,199,141,.13)}
+.hero-title{max-width:850px}
+.btn{border-radius:4px}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:#d89b4a;color:#17201d;box-shadow:0 8px 24px -13px rgba(216,155,74,.55)}
+.btn-ghost{border-color:rgba(244,237,220,.24);background:transparent}
+.scroll-hint{border-radius:3px}
+.scroll-hint span{background:#e4b86d}
+.story{background:#17201d}
+.stage{background:#94b8cb}
+.scene{inset:-4%;background:none!important;overflow:hidden}
+.scene-art{position:absolute;inset:0;width:100%;height:100%;display:block}
+.scene-art .grain{opacity:.12;mix-blend-mode:soft-light}
+.scene-art .orchard-sway{transform-box:fill-box;transform-origin:55% 45%;animation:orchard-sway 8s ease-in-out infinite alternate}
+.scene-art .leaf-drift{transform-box:fill-box;transform-origin:center;animation:leaf-drift 5s ease-in-out infinite alternate}
+.scene-art .fruit-glint{opacity:.62;animation:glint 5.5s ease-in-out infinite alternate}
+@keyframes orchard-sway{from{transform:rotate(-1deg)}to{transform:rotate(1.15deg)}}
+@keyframes leaf-drift{from{transform:translateY(0)}to{transform:translateY(5px)}}
+@keyframes glint{from{opacity:.28}to{opacity:.72}}
+.relic,.cloud{display:none}
+.vignette{background:linear-gradient(90deg,rgba(13,24,24,.12),transparent 68%),linear-gradient(0deg,rgba(13,24,24,.60),transparent 40%),radial-gradient(115% 90% at 50% 45%,transparent 53%,rgba(14,25,22,.24))}
+.caption{left:max(6vw,28px);right:auto;bottom:13vh;max-width:min(720px,82vw);padding:0;transition:opacity .2s}
+.caption h3{max-width:720px;text-shadow:0 3px 28px rgba(12,25,24,.38)}
+.caption p{max-width:550px;color:rgba(255,250,237,.91);text-shadow:0 2px 14px rgba(12,25,24,.35)}
+.caption .btn{background:#f1e8d6;color:#26342d;border:0;backdrop-filter:none}
+.caption .btn:hover{background:#fff8e9}
+.caption .domain{color:rgba(255,250,237,.7)}
+.dots button{border-color:rgba(255,250,237,.75);transition:transform .35s,background .35s}
+.dots button.on{background:#f4e4c5;transform:scale(1.45)}
+.projects-section{max-width:none;padding:92px max(20px,calc((100vw - 1120px)/2)) 100px;background:#eee9dc;color:#20312d}
+.section-meta{border-top-color:rgba(32,49,45,.18)}
+.section-title{color:#20312d}
+.count-badge{border-color:rgba(32,49,45,.22);background:transparent;color:#536158;border-radius:3px}
+.projects-grid{gap:16px}
+.project-card{padding:25px;background:rgba(255,255,255,.42);border:1px solid rgba(32,49,45,.14);border-radius:4px;backdrop-filter:none;box-shadow:0 8px 25px rgba(45,48,34,.035);transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .35s,box-shadow .35s}
+.project-card::before{background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),rgba(208,164,96,.15),transparent 65%)}
+.project-card:hover{transform:translateY(-4px);border-color:rgba(91,112,78,.45);box-shadow:0 17px 38px rgba(45,48,34,.1)}
+.project-icon{border-radius:50%;background:#e5d6b9;border-color:transparent;color:#344438}
+.project-name{font-family:'Playfair Display','Noto Serif Thai',serif;color:#26342d}
+.project-desc{color:#657067}
+.domain-link{color:#788178}
+.launch-btn{border-radius:3px;background:#304b3e;color:#f5f0e6}
+.site-footer{border-top-color:rgba(244,237,220,.13)}
+#cursor{background:radial-gradient(circle,rgba(240,210,150,.6),rgba(198,145,74,.14) 72%);box-shadow:0 0 20px 3px rgba(198,145,74,.2);mix-blend-mode:screen}
+#cursor.big{background:radial-gradient(circle,rgba(240,210,150,.3),rgba(198,145,74,.08) 72%)}
+@media(max-width:640px){.hero-section{padding-top:76px;padding-bottom:95px}.caption{left:22px;right:22px;max-width:none;bottom:11vh}.caption h3{font-size:clamp(28px,8vw,42px)}.projects-section{padding-top:65px;padding-bottom:70px}.projects-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.scene-art .orchard-sway,.scene-art .leaf-drift,.scene-art .fruit-glint{animation:none}.project-card{transition:none}}
