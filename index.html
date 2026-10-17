@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Portal — ศูนย์รวมบริการและเว็บไซต์ที่เปิดใช้งาน</title>
+  <meta name="description" content="รวมเว็บไซต์และบริการที่พร้อมใช้งานไว้ในที่เดียว" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="brand">
+          <div class="brand-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <span class="brand-name">Service Portal</span>
+        </div>
+        <div class="header-right">
+          <div class="search-box">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="searchInput" placeholder="ค้นหาบริการ..." />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Title & Subtitle Section -->
+      <section class="hero-section">
+        <h1 class="hero-title">ศูนย์รวมบริการและเว็บไซต์ที่เปิดใช้งาน</h1>
+        <p class="hero-subtitle">รวมเว็บไซต์และบริการที่พร้อมใช้งานไว้ในที่เดียว</p>
+      </section>
+
+      <!-- Services Grid Section -->
+      <section class="projects-section">
+        <div class="section-meta">
+          <span class="count-badge" id="projectCount">5 รายการ</span>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Dynamic Project Cards Inserted Here via app.js -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>© 2026 Service Portal • ศูนย์รวมบริการและเว็บไซต์ที่เปิดใช้งาน</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
