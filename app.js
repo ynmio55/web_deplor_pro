@@ -48,6 +48,32 @@ const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
 // [base hue, horizon hue, sun hue] — one palette per scene
 const PALETTES = [[235,262,45],[272,305,325],[200,218,42],[322,345,32],[255,192,50],[285,330,45]];
 
+const ICON_PATHS = {
+  monitor: '<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/>',
+  search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/>',
+  'arrow-down': '<path d="M12 5v14"/><path d="m19 12-7 7-7-7"/>',
+  'arrow-right': '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+  'arrow-up-right': '<path d="M7 17 17 7"/><path d="M7 7h10v10"/>'
+};
+
+function createIcons(root = document) {
+  root.querySelectorAll('i[data-lucide]').forEach(placeholder => {
+    const name = placeholder.getAttribute('data-lucide');
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('stroke', 'currentColor');
+    svg.setAttribute('stroke-width', '1.8');
+    svg.setAttribute('stroke-linecap', 'round');
+    svg.setAttribute('stroke-linejoin', 'round');
+    svg.setAttribute('aria-hidden', 'true');
+    svg.setAttribute('focusable', 'false');
+    svg.setAttribute('class', `lucide lucide-${name} ${placeholder.className}`.trim());
+    svg.innerHTML = ICON_PATHS[name] || '';
+    placeholder.replaceWith(svg);
+  });
+}
+
 
 function orchardArtwork(index) {
   const uid = 'orchard-' + index;
@@ -134,9 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       gridContainer.appendChild(card);
     });
-    lucide.createIcons();
+    createIcons();
     bindCursor(gridContainer);
-    if (window.AOS) setTimeout(() => AOS.refreshHard(), 30);
+
   }
   renderProjects(INITIAL_PROJECTS);
 
@@ -245,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
     (function loop() { cx += (x - cx) * .22; cy += (y - cy) * .22; cursor.style.transform = `translate(${cx}px,${cy}px)`; requestAnimationFrame(loop); })();
   }
 
-  lucide.createIcons();
+  createIcons();
   bindCursor(document);
-  AOS.init({once: true, offset: 60, duration: 800, disable: reduce});
+
 });
