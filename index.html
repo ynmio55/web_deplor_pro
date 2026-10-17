@@ -1,71 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>Service Portal — ศูนย์รวมบริการและเว็บไซต์ที่เปิดใช้งาน</title>
-<meta name="description" content="รวมเว็บไซต์และบริการที่พร้อมใช้งานไว้ในที่เดียว" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500;600&family=Noto+Serif+Thai:wght@700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="glow"></div>
-<div id="cursor" aria-hidden="true"></div>
-
-<header class="site-header">
-  <div class="header-container">
-    <a href="#top" class="brand">
-      <span class="brand-icon"><i data-lucide="monitor"></i></span>
-      <span class="brand-name serif">Service Portal</span>
-    </a>
-    <div class="search-box">
-      <i data-lucide="search" class="search-icon"></i>
-      <input type="text" id="searchInput" placeholder="ค้นหาบริการ..." />
-    </div>
-  </div>
-</header>
-
-<main id="top">
-  <section class="hero-section">
-    <p class="pill" data-aos="fade-up"><span class="dot"></span>ทุกบริการพร้อมใช้งาน</p>
-    <h1 class="hero-title serif grad" data-aos="fade-up" data-aos-delay="100">ศูนย์รวมบริการและเว็บไซต์ที่เปิดใช้งาน</h1>
-    <p class="hero-typed" data-aos="fade-up" data-aos-delay="200">เข้าถึง<span id="typed" class="serif"></span><span class="caret"></span></p>
-    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">รวมเว็บไซต์และบริการที่พร้อมใช้งานไว้ในที่เดียว</p>
-    <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
-      <a href="#story" class="btn btn-primary">เลื่อนชมบริการ <i data-lucide="arrow-down" class="arrow"></i></a>
-      <a href="#services" class="btn btn-ghost">ดูทั้งหมด <i data-lucide="arrow-right" class="arrow"></i></a>
-    </div>
-    <div class="scroll-hint" aria-hidden="true"><span></span></div>
-  </section>
-
-  <!-- Scroll-driven story: one scene per service (built by app.js) -->
-  <section id="story" class="story">
-    <div class="stage">
-      <div id="scenes" class="scenes"></div>
-      <div id="captions" class="captions"></div>
-      <nav id="dots" class="dots" aria-label="เลือกบริการ"></nav>
-      <div class="vignette"></div>
-    </div>
-  </section>
-
-  <section id="services" class="projects-section">
-    <div class="section-meta" data-aos="fade-up">
-      <h2 class="section-title serif">บริการทั้งหมด</h2>
-      <span class="count-badge" id="projectCount">6 รายการ</span>
-    </div>
-    <div class="projects-grid" id="projectsGrid"></div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <p>© 2026 Service Portal • ศูนย์รวมบริการและเว็บไซต์ที่เปิดใช้งาน</p>
-</footer>
-
-
-
-<script src="app.js"></script>
-</body>
-</html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Miosmooth — รวมเครื่องมือและบริการ</title><meta name="description" content="ค้นหาและเปิดใช้เครื่องมือของ Miosmooth สำหรับเสียง เพลง ภาพ และเบราว์เซอร์">
+<meta name="theme-color" content="#f4f2eb"><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body><a class="skip-link" href="#services">ข้ามไปที่เครื่องมือ</a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="#top" aria-label="Miosmooth หน้าแรก"><span class="brand-mark" aria-hidden="true">m.</span><span>miosmooth<span class="brand-sub">TOOLS & SERVICES</span></span></a><a class="header-link" href="#services">เครื่องมือทั้งหมด <span aria-hidden="true">↘</span></a></div></header>
+<main id="top"><section class="hero" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow">MIOSMOOTH / เครื่องมือและบริการ</p><h1 id="hero-title">เครื่องมือของคุณ<br><span>อยู่ที่เดียวกัน</span></h1><p class="hero-description">เลือกเครื่องมือสำหรับเสียง ภาพ และงานของคุณ<br class="desktop-break"> เปิดใช้ได้จากลิงก์ด้านล่าง</p><a class="hero-link" href="#services">เลือกเครื่องมือ <span aria-hidden="true">↓</span></a></div><div class="hero-art"><svg class="orchard-art" viewBox="0 0 580 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="ภาพประกอบกิ่งไม้และผลแพร์โทนสีทอง">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#8bbcc8"/><stop offset="1" stop-color="#c8d3b9"/></linearGradient><linearGradient id="pear" x2="1" y2="1"><stop stop-color="#f2d27c"/><stop offset=".55" stop-color="#dea34c"/><stop offset="1" stop-color="#b97339"/></linearGradient><pattern id="lines" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0h6" stroke="#fff" stroke-opacity=".08"/></pattern></defs>
+<rect width="580" height="360" fill="url(#sky)"/><circle cx="123" cy="95" r="61" fill="#f3e4b9" opacity=".85"/><path d="M0 290Q140 240 280 285T580 258V360H0Z" fill="#9ca681"/><path d="M0 325Q180 272 350 316T580 294V360H0Z" fill="#788e6e"/>
+<g class="branch-art"><path d="M590 350Q440 200 390 100T235-20M396 112Q470 82 520 17M439 205Q348 197 290 146" fill="none" stroke="#5a5940" stroke-width="18" stroke-linecap="round"/><g fill="#627952"><path d="M389 104q-79-71-78-7 40 51 78 7Z"/><path d="M437 84q8-77 65-67-7 61-65 67Z"/><path d="M470 235q38-66 84-23-33 50-84 23Z"/><path d="M353 187q-73 29-71-31 52-9 71 31Z"/></g><g fill="#8c994f"><path d="M330 36q-62-41-62 16 42 21 62-16Z"/><path d="M452 131q49-45 73 3-47 27-73-3Z"/></g><path d="M400 123q-7 21-4 30M308 163q-7 15-3 29" stroke="#5c623f" stroke-width="6" stroke-linecap="round"/><path d="M396 150c-28-23-47 9-40 39-41 53-23 105 29 111 54 5 81-43 46-101-12-20-10-35-35-49Z" fill="url(#pear)"/><path d="M305 191c-20-15-34 6-28 26-28 37-15 72 20 75 37 4 56-28 32-68-8-14-7-24-24-33Z" fill="url(#pear)"/><path d="M371 205q-13 34 5 59M286 230q-9 23 3 40" stroke="#fff0b3" stroke-width="5" stroke-linecap="round" opacity=".5"/></g><rect width="580" height="360" fill="url(#lines)" pointer-events="none"/></svg></div></section>
+<section id="services" class="services" aria-labelledby="services-title"><div class="section-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="services-title">เลือกสิ่งที่อยากทำ</h2></div><p id="resultCount" role="status" aria-live="polite" aria-atomic="true">6 เครื่องมือ</p></div>
+<div id="tools" class="tools" hidden><div class="search-row"><div class="search-field"><label class="sr-only" for="searchInput">ค้นหาเครื่องมือจากชื่อหรือสิ่งที่ต้องการทำ</label><svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="searchInput" type="search" placeholder="ค้นหาชื่อเครื่องมือ หรือสิ่งที่อยากทำ…" autocomplete="off" maxlength="120" aria-controls="projectsGrid"><kbd aria-hidden="true">/</kbd><button id="clearSearch" type="button" aria-label="ล้างคำค้นหา" hidden>×</button></div><p class="search-help">ชื่อเว็บ ประเภทงาน หรือโดเมน</p></div>
+<div class="filters" role="group" aria-label="เลือกหมวดเครื่องมือ"><button type="button" data-filter="all" aria-pressed="true">ทั้งหมด <span>6</span></button><button type="button" data-filter="audio" aria-pressed="false">เสียงและเพลง <span>3</span></button><button type="button" data-filter="creative" aria-pressed="false">ภาพและข้อมูล <span>2</span></button><button type="button" data-filter="browser" aria-pressed="false">เบราว์เซอร์ <span>1</span></button><button type="button" data-filter="favorites" aria-pressed="false">รายการโปรด <span id="favoriteCount">0</span></button></div></div>
+<div id="projectsGrid" class="projects-grid"><article class="service-card" data-id="litewave-web" data-category="browser" data-search="litewave web เปิดหน้าเว็บของ LiteWave และดูข้อมูลเกี่ยวกับเบราว์เซอร์ litewave.miosmooth.com เบราว์เซอร์">
+<a class="card-main" href="https://litewave.miosmooth.com" target="_blank" rel="noopener noreferrer" aria-label="LiteWave Web — เปิดเว็บไซต์ในแท็บใหม่">
+<div class="card-meta"><span class="card-number">01</span><span>เบราว์เซอร์</span></div>
+<span class="service-symbol" aria-hidden="true">◎</span><h3>LiteWave Web</h3><p class="card-description">เปิดหน้าเว็บของ LiteWave และดูข้อมูลเกี่ยวกับเบราว์เซอร์</p>
+<div class="card-action"><span class="domain">litewave.miosmooth.com</span><span class="open-label">เปิดเว็บ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+</a><button class="favorite-button" type="button" aria-label="เพิ่ม LiteWave Web ในรายการโปรด" aria-pressed="false" data-name="LiteWave Web" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3L3.2 9.7l6.4-.9Z"/></svg></button></article>
+<article class="service-card" data-id="mp3-converter" data-category="audio" data-search="youtube mp3 downloader เครื่องมือแปลงวิดีโอ YouTube เป็นไฟล์เสียง MP3 mp3-con-dow.miosmooth.com เสียงและเพลง">
+<a class="card-main" href="https://mp3-con-dow.miosmooth.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube MP3 Downloader — เปิดเว็บไซต์ในแท็บใหม่">
+<div class="card-meta"><span class="card-number">02</span><span>เสียงและเพลง</span></div>
+<span class="service-symbol" aria-hidden="true">↓</span><h3>YouTube MP3 Downloader</h3><p class="card-description">เครื่องมือแปลงวิดีโอ YouTube เป็นไฟล์เสียง MP3</p>
+<div class="card-action"><span class="domain">mp3-con-dow.miosmooth.com</span><span class="open-label">เปิดเว็บ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+</a><button class="favorite-button" type="button" aria-label="เพิ่ม YouTube MP3 Downloader ในรายการโปรด" aria-pressed="false" data-name="YouTube MP3 Downloader" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3L3.2 9.7l6.4-.9Z"/></svg></button></article>
+<article class="service-card" data-id="yabotify-web" data-category="audio" data-search="yabotify เว็บแอปสำหรับฟังเพลงและใช้งานบริการเพลงของ Yabotify yabotify.miosmooth.com เสียงและเพลง">
+<a class="card-main" href="https://yabotify.miosmooth.com" target="_blank" rel="noopener noreferrer" aria-label="Yabotify — เปิดเว็บไซต์ในแท็บใหม่">
+<div class="card-meta"><span class="card-number">03</span><span>เสียงและเพลง</span></div>
+<span class="service-symbol" aria-hidden="true">♫</span><h3>Yabotify</h3><p class="card-description">เว็บแอปสำหรับฟังเพลงและใช้งานบริการเพลงของ Yabotify</p>
+<div class="card-action"><span class="domain">yabotify.miosmooth.com</span><span class="open-label">เปิดเว็บ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+</a><button class="favorite-button" type="button" aria-label="เพิ่ม Yabotify ในรายการโปรด" aria-pressed="false" data-name="Yabotify" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3L3.2 9.7l6.4-.9Z"/></svg></button></article>
+<article class="service-card" data-id="morph-app" data-category="creative" data-search="morph เครื่องมือประมวลผลและแปลงรูปแบบข้อมูล SmoothMorph morph.miosmooth.com ภาพและข้อมูล">
+<a class="card-main" href="https://morph.miosmooth.com" target="_blank" rel="noopener noreferrer" aria-label="Morph — เปิดเว็บไซต์ในแท็บใหม่">
+<div class="card-meta"><span class="card-number">04</span><span>ภาพและข้อมูล</span></div>
+<span class="service-symbol" aria-hidden="true">◈</span><h3>Morph</h3><p class="card-description">เครื่องมือประมวลผลและแปลงรูปแบบข้อมูล SmoothMorph</p>
+<div class="card-action"><span class="domain">morph.miosmooth.com</span><span class="open-label">เปิดเว็บ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+</a><button class="favorite-button" type="button" aria-label="เพิ่ม Morph ในรายการโปรด" aria-pressed="false" data-name="Morph" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3L3.2 9.7l6.4-.9Z"/></svg></button></article>
+<article class="service-card" data-id="ascii-vision" data-category="creative" data-search="ascii vision แปลงภาพและวิดีโอให้เป็นภาพจากตัวอักษร ASCII ascii.miosmooth.com ภาพและข้อมูล">
+<a class="card-main" href="https://ascii.miosmooth.com" target="_blank" rel="noopener noreferrer" aria-label="ASCII Vision — เปิดเว็บไซต์ในแท็บใหม่">
+<div class="card-meta"><span class="card-number">05</span><span>ภาพและข้อมูล</span></div>
+<span class="service-symbol" aria-hidden="true">Aa</span><h3>ASCII Vision</h3><p class="card-description">แปลงภาพและวิดีโอให้เป็นภาพจากตัวอักษร ASCII</p>
+<div class="card-action"><span class="domain">ascii.miosmooth.com</span><span class="open-label">เปิดเว็บ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+</a><button class="favorite-button" type="button" aria-label="เพิ่ม ASCII Vision ในรายการโปรด" aria-pressed="false" data-name="ASCII Vision" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3L3.2 9.7l6.4-.9Z"/></svg></button></article>
+<article class="service-card" data-id="stem-studio" data-category="audio" data-search="stem studio แยกแทร็กเสียงดนตรีเพื่อนำไปใช้งานต่อในสตูดิโอ stemstudio.miosmooth.com เสียงและเพลง">
+<a class="card-main" href="https://stemstudio.miosmooth.com" target="_blank" rel="noopener noreferrer" aria-label="Stem Studio — เปิดเว็บไซต์ในแท็บใหม่">
+<div class="card-meta"><span class="card-number">06</span><span>เสียงและเพลง</span></div>
+<span class="service-symbol" aria-hidden="true">≋</span><h3>Stem Studio</h3><p class="card-description">แยกแทร็กเสียงดนตรีเพื่อนำไปใช้งานต่อในสตูดิโอ</p>
+<div class="card-action"><span class="domain">stemstudio.miosmooth.com</span><span class="open-label">เปิดเว็บ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+</a><button class="favorite-button" type="button" aria-label="เพิ่ม Stem Studio ในรายการโปรด" aria-pressed="false" data-name="Stem Studio" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3L3.2 9.7l6.4-.9Z"/></svg></button></article></div>
+<div id="emptyState" class="empty-state" hidden><span class="empty-symbol" aria-hidden="true">⌕</span><h3 id="emptyTitle">ไม่พบเครื่องมือที่ตรงกัน</h3><p id="emptyDescription">ลองเปลี่ยนคำค้นหาหรือเลือกหมวดอื่น</p><button id="resetFilters" type="button">แสดงเครื่องมือทั้งหมด</button></div>
+<p class="section-note">ลิงก์บริการเปิดในแท็บใหม่ • รายการโปรดบันทึกเฉพาะเบราว์เซอร์นี้<span id="storageNote" hidden> (ขณะนี้บันทึกได้เฉพาะช่วงที่เปิดหน้านี้)</span></p>
+<noscript><p class="noscript-note">เปิดบริการได้ตามปกติ หากต้องการค้นหาและบันทึกรายการโปรด กรุณาเปิด JavaScript</p></noscript></section></main>
+<footer class="site-footer"><span>miosmooth<span class="footer-dot">.</span></span><p>เครื่องมือเล็ก ๆ สำหรับงานที่คุณอยากทำ</p><a href="#top">กลับด้านบน ↑</a></footer><div id="favoriteStatus" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+</body></html>
