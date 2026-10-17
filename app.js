@@ -51,6 +51,12 @@ const PALETTES = [[235,262,45],[272,305,325],[200,218,42],[322,345,32],[255,192,
 
 function orchardArtwork(index) {
   const uid = 'orchard-' + index;
+  const skyPalettes = [
+    ['#78b5d2','#acd0ce','#e1c58b'], ['#879caf','#d3c7ac','#dda96e'],
+    ['#75b9d0','#b8d1c8','#ead39a'], ['#6f91a5','#c7c1ad','#dc9c65'],
+    ['#89a6b0','#d0d1bc','#e3bd79'], ['#78a8b7','#cec9ad','#efbd68']
+  ];
+  const [skyTop, skyMid, skyHorizon] = skyPalettes[index % skyPalettes.length];
   const fruitXs = [[770,1010,1235],[865,1110],[745,990,1210],[900,1165],[800,1030,1250],[860,1090,1260]][index % 6];
   const fruits = fruitXs.map((x, j) => {
     const y = 345 + ((j + index) % 3) * 92;
@@ -66,7 +72,7 @@ function orchardArtwork(index) {
   const foliage = leaves.map(([x,y,r],j)=>`<path class="leaf-drift" style="animation-delay:-${j*.31}s" d="M${x} ${y} C${x-48} ${y-46} ${x-76} ${y+2} ${x-13} ${y+34} C${x+21} ${y+22} ${x+25} ${y-6} ${x} ${y}Z" transform="rotate(${r} ${x} ${y})" fill="${j%3===0?'#60734c':j%3===1?'#75834d':'#a2a060'}" opacity=".92"/>`).join('');
   return `<svg class="scene-art" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <defs>
-      <linearGradient id="${uid}-sky" x2="0" y2="1"><stop stop-color="#78b5d2"/><stop offset=".58" stop-color="#acd0ce"/><stop offset="1" stop-color="#e1c58b"/></linearGradient>
+      <linearGradient id="${uid}-sky" x2="0" y2="1"><stop stop-color="${skyTop}"/><stop offset=".58" stop-color="${skyMid}"/><stop offset="1" stop-color="${skyHorizon}"/></linearGradient>
       <linearGradient id="${uid}-fruit" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6d36b"/><stop offset=".48" stop-color="#e59a37"/><stop offset="1" stop-color="#b95226"/></linearGradient>
       <linearGradient id="${uid}-hill" x2="0" y2="1"><stop stop-color="#748052"/><stop offset="1" stop-color="#324b3b"/></linearGradient>
       <filter id="${uid}-shadow" x="-40%" y="-30%" width="180%" height="190%"><feGaussianBlur in="SourceAlpha" stdDeviation="12"/><feOffset dy="12"/><feComponentTransfer><feFuncA type="linear" slope=".32"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
